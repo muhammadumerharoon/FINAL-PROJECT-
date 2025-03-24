@@ -98,9 +98,11 @@
       <div>
         <h2 class="text-4xl font-bold mb-4 text-center pt-8">CLOTHING</h2>
         <div id="products-container" class="grid grid-cols-4 gap-4"></div>
+
         <div class="flex justify-center mt-4">
           <button
-            id="view-all-products"
+            id="view-all-clothing"
+            onclick="redirectToCategory('clothing')"
             class="px-6 py-3 bg-blue-500 text-white rounded text-lg"
           >
             View All
@@ -113,13 +115,13 @@
         <div id="top-selling-container" class="grid grid-cols-4 gap-4"></div>
         <div class="flex justify-center mt-4">
           <button
-            id="view-all-top-selling"
+            id="view-all-jewelry"
+            onclick="redirectToCategory('jewelery')"
             class="px-6 py-3 bg-blue-500 text-white rounded text-lg"
           >
             View All
           </button>
         </div>
-      </div>
     </div>
 
     <div class="bg-gray-100 p-6 rounded-lg max-w-6xl mx-auto">

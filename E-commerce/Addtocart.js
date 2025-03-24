@@ -65,5 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
       updateCart();
   }
   
+  document.getElementById("checkout-btn").addEventListener("click", function () {
+    window.location.href = "Checkoutpage.html"; // Checkout page ka URL
+});
+
 
 

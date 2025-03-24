@@ -143,3 +143,11 @@ document.addEventListener("DOMContentLoaded", async function() {
       console.error("Error fetching reviews:", error);
     }
   });
+
+  function redirectToCategory(category) {
+    window.location.href = `Categorypage.html?category=${category}`;
+}
+
+function redirectToCategory(category) {
+    window.location.href = `Categorypage.html?category=${category}`;
+}
