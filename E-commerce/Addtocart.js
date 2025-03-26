@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
   document.getElementById("checkout-btn").addEventListener("click", function () {
-    window.location.href = "Checkoutpage.html"; // Checkout page ka URL
+    window.location.href = "Checkoutpage.html";
 });
 
 

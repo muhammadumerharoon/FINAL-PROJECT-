@@ -10,28 +10,36 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
   </head>
-  <body >
+  <body>
     <section class="w-full bg-black text-white text-center py-2 text-sm">
-      Sign up and get 20% off your first order. <a href="">Sign Up Now</a>
+      SIGN UP AND GET 20% OFF YOUR FIRST ORDER. SIGN UP NOW
     </section>
 
-    <nav class="px-16 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-10">
-        <img src="Nav logo.jpg" alt="Logo" />
-        <ul class="flex items-center gap-10">
-          <li>Shop</li>
+    <nav class="px-4 lg:px-16 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-4 lg:gap-10">
+        <a href="Homepage.html"
+          ><img src="Nav logo.jpg" alt="Logo" class="h-8 lg:h-auto"
+        /></a>
+        <ul class="hidden items-center gap-6 lg:gap-10 md:flex">
+          <li>
+            <a
+              href="http://127.0.0.1:5500/E-commerce/Categorypage.html?category=clothing"
+              >Shop</a
+            >
+          </li>
           <li>On Sale</li>
           <li>New Arrivals</li>
           <li>Brands</li>
         </ul>
       </div>
 
-      <div class="flex items-center gap-6">
-        <i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i>
-        <i class="fa-solid fa-user text-xl cursor-pointer"></i>
+      <div class="flex items-center gap-4 lg:gap-6">
+        <i
+          class="fa-solid fa-cart-shopping text-lg lg:text-xl cursor-pointer"
+        ></i>
+        <i class="fa-solid fa-user text-lg lg:text-xl cursor-pointer"></i>
       </div>
     </nav>
-
     <div class="container mx-auto p-6">
       <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row">
         <div class="w-full md:w-1/2 flex flex-col items-center">
@@ -123,10 +131,10 @@
       </div>
     </div>
 
-    <div class="max-w-4xl mx-auto">
+    <div class="max-w-4xl mx-auto px-4">
       <div class="flex justify-between items-center mb-4">
         <h2 class="text-2xl font-bold">
-          All Reviews <span class="text-gray-500 text-sm">(451)</span>
+          All Reviews <span class="text-gray-500 text-sm">(45)</span>
         </h2>
         <div class="flex items-center space-x-4">
           <button class="bg-gray-200 px-4 py-2 rounded-lg">Latest ▼</button>
@@ -135,143 +143,128 @@
           </button>
         </div>
       </div>
+
       <div
         id="reviewsContainer"
-        class="grid grid-cols-1 md:grid-cols-2 gap-4"
+        class="space-y-6 md:grid md:grid-cols-2 md:gap-4"
       ></div>
     </div>
 
-    <h2 class="text-4xl font-extrabold text-center mb-6 mt-12">
+    <h2
+      class="text-2xl md:text-4xl font-extrabold text-center mb-6 mt-8 md:mt-12"
+    >
       YOU MIGHT ALSO LIKE
     </h2>
     <div
       id="products"
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-8 mt-12"
+      class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-4 md:mx-8 mt-8 md:mt-12"
     >
-      <div class="bg-white p-4 rounded-lg shadow-lg">
-        <img
-          src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
-          class="w-full h-48 object-contain"
-          alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops"
-        />
-        <h3 class="text-lg font-bold mt-2">
-          Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops
-        </h3>
-        <p class="text-red-600 font-bold">$109.95</p>
-        <a href="product-detail.html?id=1" class="text-blue-500"
-          >View Details</a
-        >
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow-lg">
-        <img
-          src="https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
-          class="w-full h-48 object-contain"
-          alt="Mens Casual Premium Slim Fit T-Shirts "
-        />
-        <h3 class="text-lg font-bold mt-2">
-          Mens Casual Premium Slim Fit T-Shirts
-        </h3>
-        <p class="text-red-600 font-bold">$22.3</p>
-        <a href="product-detail.html?id=2" class="text-blue-500"
-          >View Details</a
-        >
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow-lg">
-        <img
-          src="https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
-          class="w-full h-48 object-contain"
-          alt="Mens Cotton Jacket"
-        />
-        <h3 class="text-lg font-bold mt-2">Mens Cotton Jacket</h3>
-        <p class="text-red-600 font-bold">$55.99</p>
-        <a href="product-detail.html?id=3" class="text-blue-500"
-          >View Details</a
-        >
-      </div>
+      <div class="bg-white p-3 md:p-4 rounded-lg shadow-lg"></div>
+      <div class="bg-white p-3 md:p-4 rounded-lg shadow-lg"></div>
+      <div class="bg-white p-3 md:p-4 rounded-lg shadow-lg"></div>
     </div>
 
     <div
-      class="bg-black text-white text-center p-6 md:p-10 mx-4 md:mx-16 lg:mx-32 rounded-xl mt-12"
+      class="bg-black text-white text-center p-6 mx-4 md:mx-16 lg:mx-32 rounded-xl"
     >
-      <h2 class="text-2xl md:text-3xl font-bold">
-        STAY UPTO DATE ABOUT<br />OUR LATEST OFFERS
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        STAY UP TO DATE ABOUT<br />OUR LATEST OFFERS
       </h2>
 
-      <div class="mt-4 flex flex-col items-end space-y-3">
+      <div class="mt-6 flex flex-col items-center space-y-3">
         <input
           type="email"
           placeholder="Enter your email address"
-          class="p-3 w-80 rounded-md text-black"
+          class="p-3 w-full max-w-xs rounded-md text-black focus:outline-none focus:ring-2 focus:ring-white"
         />
-        <button class="bg-white text-black px-6 py-3 rounded-md font-bold w-80">
+        <button
+          class="bg-white text-black px-6 py-3 rounded-md font-bold w-full max-w-xs hover:bg-gray-200 transition"
+        >
           Subscribe to Newsletter
         </button>
       </div>
     </div>
 
-    <footer class="bg-gray-100 text-black p-10">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
-        <div class="col-span-1 md:col-span-2">
-          <h2 class="text-2xl font-bold">SHOP.CO</h2>
-          <p class="text-sm mt-2">
-            We have clothes that suit your style and which you're proud to wear.
-            From women to men.
-          </p>
-          <div class="flex space-x-4 mt-4">
-            <a href="" class="text-black"><i class="fab fa-facebook"></i></a>
-            <a href="" class="text-black"><i class="fab fa-twitter"></i></a>
-            <a href="" class="text-black"><i class="fab fa-instagram"></i></a>
+    <footer class="bg-gray-100 text-black p-6 md:p-10">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10">
+          <div class="col-span-2">
+            <h2 class="text-2xl font-bold">SHOP.CO</h2>
+            <p class="text-sm mt-2 text-gray-600">
+              We have clothes that suits your style and which you're proud to
+              wear. From women to men.
+            </p>
+            <div class="flex space-x-4 mt-4">
+              <a href="" class="text-black hover:text-gray-600"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="" class="text-black hover:text-gray-600"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="" class="text-black hover:text-gray-600"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-sm md:text-base">COMPANY</h3>
+            <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
+              <li><a href="" class="hover:text-black">About</a></li>
+              <li><a href="" class="hover:text-black">Features</a></li>
+              <li><a href="" class="hover:text-black">Works</a></li>
+              <li><a href="" class="hover:text-black">Career</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-sm md:text-base">HELP</h3>
+            <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
+              <li><a href="" class="hover:text-black">Customer Support</a></li>
+              <li><a href="" class="hover:text-black">Delivery Details</a></li>
+              <li>
+                <a href="" class="hover:text-black">Terms & Conditions</a>
+              </li>
+              <li><a href="" class="hover:text-black">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="mt-4 md:mt-0">
+            <h3 class="font-bold text-sm md:text-base">FAQ</h3>
+            <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
+              <li><a href="" class="hover:text-black">Account</a></li>
+              <li>
+                <a href="" class="hover:text-black">Manage Deliveries</a>
+              </li>
+              <li><a href="" class="hover:text-black">Orders</a></li>
+              <li><a href="" class="hover:text-black">Payments</a></li>
+            </ul>
+          </div>
+
+          <div class="mt-4 md:mt-0">
+            <h3 class="font-bold text-sm md:text-base">RESOURCES</h3>
+            <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
+              <li><a href="" class="hover:text-black">Free eBooks</a></li>
+              <li>
+                <a href="" class="hover:text-black">Development Tutorial</a>
+              </li>
+              <li><a href="" class="hover:text-black">How to - Blog</a></li>
+              <li><a href="" class="hover:text-black">YouTube Playlist</a></li>
+            </ul>
           </div>
         </div>
 
-        <div>
-          <h3 class="font-bold">COMPANY</h3>
-          <ul class="text-sm mt-4 space-y-2">
-            <li><a href="">About</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Works</a></li>
-            <li><a href="">Career</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold">HELP</h3>
-          <ul class="text-sm mt-4 space-y-2">
-            <li><a href="">Customer Support</a></li>
-            <li><a href="">Delivery Details</a></li>
-            <li><a href="">Terms &amp; Conditions</a></li>
-            <li><a href="">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold">FAQ</h3>
-          <ul class="text-sm mt-4 space-y-2">
-            <li><a href="">Account</a></li>
-            <li><a href="">Manage Deliveries</a></li>
-            <li><a href="">Orders</a></li>
-            <li><a href="">Payments</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold">RESOURCES</h3>
-          <ul class="text-sm mt-4 space-y-2">
-            <li><a href="">Free eBooks</a></li>
-            <li><a href="">Development Tutorial</a></li>
-            <li><a href="">How to - Blog</a></li>
-            <li><a href="">YouTube Playlist</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div
-        class="max-w-6xl mx-auto mt-8 pt-4 flex justify-between text-sm text-gray-500"
-      >
-        <p>Shop.co © 2000-2023, All Rights Reserved</p>
-        <div class="flex space-x-2">
-          <i class="fa-brands fa-cc-visa"></i>
-          <i class="fa-brands fa-cc-paypal"></i>
-          <i class="fa-brands fa-cc-mastercard"></i>
-          <i class="fa-brands fa-cc-apple-pay"></i>
-          <i class="fa-brands fa-google-pay"></i>
+        <div
+          class="mt-8 pt-4 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm text-gray-500"
+        >
+          <p>Shop.co © 2000-2023, All Rights Reserved</p>
+          <div class="flex space-x-2">
+            <i class="fa-brands fa-cc-visa text-lg"></i>
+            <i class="fa-brands fa-cc-paypal text-lg"></i>
+            <i class="fa-brands fa-cc-mastercard text-lg"></i>
+            <i class="fa-brands fa-cc-apple-pay text-lg"></i>
+            <i class="fa-brands fa-google-pay text-lg"></i>
+          </div>
         </div>
       </div>
     </footer>

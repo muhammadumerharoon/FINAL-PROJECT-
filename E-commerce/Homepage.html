@@ -18,46 +18,60 @@
   </head>
   <body>
     <section class="w-full bg-black text-white text-center py-2 text-sm">
-      Sign up and get 20% off your first order. <a href="">Sign Up Now</a>
+      SIGN UP AND GET 20% OFF YOUR FIRST ORDER. SIGN UP NOW
     </section>
 
-    <nav class="px-16 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-10">
-        <img src="Nav logo.jpg" alt="Logo" />
-        <ul class="flex items-center gap-10">
-          <li>Shop</li>
+    <nav class="px-4 lg:px-16 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-4 lg:gap-10">
+        <a href="Homepage.html"
+          ><img src="Nav logo.jpg" alt="Logo" class="h-8 lg:h-auto"
+        /></a>
+        <ul class="hidden items-center gap-6 lg:gap-10 md:flex">
+          <li>
+            <a
+              href="http://127.0.0.1:5500/E-commerce/Categorypage.html?category=clothing"
+              >Shop</a
+            >
+          </li>
           <li>On Sale</li>
           <li>New Arrivals</li>
           <li>Brands</li>
         </ul>
       </div>
 
-      <div class="flex items-center gap-6">
-        <i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i>
-        <i class="fa-solid fa-user text-xl cursor-pointer"></i>
+      <div class="flex items-center gap-4 lg:gap-6">
+        <i
+          class="fa-solid fa-cart-shopping text-lg lg:text-xl cursor-pointer"
+        ></i>
+        <i class="fa-solid fa-user text-lg lg:text-xl cursor-pointer"></i>
       </div>
     </nav>
 
     <div
-      class="relative w-full h-[600px] bg-cover bg-center flex items-center"
-      style="background-image: url('herosec.jpg')"
+      class="relative w-full h-auto lg:h-svh bg-cover bg-center flex items-center bg-none lg:bg-[url('herosec.jpg')]"
     >
-      <img src="Star 1.png" class="absolute top-10 left-10 w-12" />
-      <img src="Star 2.png" class="absolute top-20 right-20 w-16" />
+      <img
+        src="Star 1.png"
+        class="hidden lg:block absolute top-10 left-10 w-12"
+      />
+      <img
+        src="Star 2.png"
+        class="hidden lg:block absolute top-20 right-20 w-16"
+      />
 
       <div
-        class="relative z-10 w-full max-w-6xl mx-auto px-6 px-16 flex flex-col lg:flex-row items-center"
+        class="relative z-10 w-full max-w-6xl mx-auto px-4 lg:px-6 py-8 lg:py-0 flex flex-col lg:flex-row items-center"
       >
-        <div class="w-1/2 text-left">
+        <div class="w-full md:w-1/2 text-center lg:text-left">
           <h1
-            class="text-4xl lg:text-5xl font-extrabold text-black leading-tight"
+            class="text-3xl lg:text-5xl font-extrabold text-black leading-tight"
           >
-            FIND CLOTHES <br />
-            THAT MATCHES <br />
+            FIND CLOTHES <br class="hidden lg:block" />
+            THAT MATCHES <br class="hidden lg:block" />
             YOUR STYLE
           </h1>
 
-          <p class="mt-4 text-gray-600 text-lg">
+          <p class="mt-4 text-gray-600 text-base lg:text-lg">
             Browse through our diverse range of meticulously crafted garments,
             designed to bring out your individuality and cater to your sense of
             style.
@@ -69,101 +83,159 @@
             Shop Now
           </button>
 
-          <div class="mt-8 flex gap-10">
-            <div>
-              <span class="text-2xl font-bold">200+</span>
-              <p class="text-gray-500 text-sm">International Brands</p>
+          <div
+            class="mt-8 flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-10"
+          >
+            <div class="text-center lg:text-left">
+              <span class="text-xl lg:text-2xl font-bold">200+</span>
+              <p class="text-gray-500 text-xs lg:text-sm">
+                International Brands
+              </p>
             </div>
-            <div>
-              <span class="text-2xl font-bold">2,000+</span>
-              <p class="text-gray-500 text-sm">High-Quality Products</p>
+            <div class="text-center lg:text-left">
+              <span class="text-xl lg:text-2xl font-bold">2,000+</span>
+              <p class="text-gray-500 text-xs lg:text-sm">
+                High-Quality Products
+              </p>
             </div>
-            <div>
-              <span class="text-2xl font-bold">30,000+</span>
-              <p class="text-gray-500 text-sm">Happy Customers</p>
+            <div class="text-center lg:text-left">
+              <span class="text-xl lg:text-2xl font-bold">30,000+</span>
+              <p class="text-gray-500 text-xs lg:text-sm">Happy Customers</p>
             </div>
           </div>
+
+          <img
+            src="herosec2.png"
+            alt="Mobile Hero Image"
+            class="mt-8 w-full block lg:hidden"
+          />
         </div>
       </div>
     </div>
 
-    <div class="w-full bg-black py-6 flex justify-center gap-20">
-      <img src="Versace.png" alt="Versace" class="w-auto" />
-      <img src="Gucci.png" alt="Gucci" class="w-auto" />
-      <img src="Parada.png" alt="Prada" class="w-auto" />
-      <img src="Calvin.png" alt="Calvin Klein" class="w-auto" />
+    <div
+      class="w-full bg-black py-4 lg:py-6 flex flex-wrap justify-center gap-4 lg:gap-20 px-4"
+    >
+      <img src="Versace.png" alt="Versace" class="h-6 lg:h-auto" />
+      <img src="Gucci.png" alt="Gucci" class="h-6 lg:h-auto" />
+      <img src="Parada.png" alt="Prada" class="h-6 lg:h-auto" />
+      <img src="Calvin.png" alt="Calvin Klein" class="h-6 lg:h-auto" />
     </div>
 
-    <div class="max-w-6xl mx-auto">
-      <div>
-        <h2 class="text-4xl font-bold mb-4 text-center pt-8">CLOTHING</h2>
-        <div id="products-container" class="grid grid-cols-4 gap-4"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="mt-8 lg:mt-12">
+        <h2
+          class="text-2xl lg:text-4xl font-bold mb-4 lg:mb-6 text-center pt-4 lg:pt-8"
+        >
+          CLOTHING
+        </h2>
+        <div
+          id="products-container"
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-4"
+        >
+          <div class="bg-white p-3 rounded-lg shadow-sm">
+            <div class="aspect-square bg-gray-100 mb-2"></div>
+          </div>
+        </div>
 
-        <div class="flex justify-center mt-4">
+        <div class="flex justify-center mt-4 lg:mt-6">
           <button
             id="view-all-clothing"
             onclick="redirectToCategory('clothing')"
-            class="px-6 py-3 bg-blue-500 text-white rounded text-lg"
+            class="px-4 py-2 lg:px-6 lg:py-3 bg-black text-white rounded-full text-sm lg:text-lg mt-2"
           >
             View All
           </button>
         </div>
       </div>
 
-      <div class="mt-12">
-        <h2 class="text-4xl font-bold mb-4 text-center">JEWELRY</h2>
-        <div id="top-selling-container" class="grid grid-cols-4 gap-4"></div>
-        <div class="flex justify-center mt-4">
+      <div class="mt-8 lg:mt-12">
+        <h2 class="text-2xl lg:text-4xl font-bold mb-4 lg:mb-6 text-center">
+          JEWELRY
+        </h2>
+        <div
+          id="top-selling-container"
+          class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-4"
+        >
+          <div class="bg-white p-3 rounded-lg shadow-sm">
+            <div class="aspect-square bg-gray-100 mb-2"></div>
+            <h3 class="font-medium text-sm lg:text-base">
+              Vertical Striped Shirt
+            </h3>
+            <p class="text-gray-600 text-sm lg:text-base">$85</p>
+          </div>
+        </div>
+
+        <div class="flex justify-center mt-4 lg:mt-6">
           <button
             id="view-all-jewelry"
             onclick="redirectToCategory('jewelery')"
-            class="px-6 py-3 bg-blue-500 text-white rounded text-lg"
+            class="px-4 py-2 lg:px-6 lg:py-3 bg-black text-white rounded-full text-sm lg:text-lg mb-4"
           >
             View All
           </button>
         </div>
+      </div>
     </div>
 
-    <div class="bg-gray-100 p-6 rounded-lg max-w-6xl mx-auto">
-      <h2 class="text-center text-4xl font-extrabold mb-4 mt-6">
+    <div
+      class="bg-gray-100 p-4 lg:p-6 rounded-lg max-w-6xl mx-auto mt-8 lg:mt-12"
+    >
+      <h2 class="text-center text-2xl lg:text-4xl font-extrabold mb-4 lg:mb-6">
         BROWSE BY DRESS STYLE
       </h2>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-4">
         <div class="relative bg-white rounded-lg overflow-hidden">
           <img src="jw1.jpg" alt="" class="w-full h-48 object-cover" />
-          <p class="absolute top-2 left-2 bg-white px-2 py-1 text-sm font-bold">
+          <p
+            class="absolute top-2 left-2 bg-white px-4 py-2 text-sm font-bold rounded"
+          >
             JEWELRY
           </p>
         </div>
+
         <div class="relative bg-white rounded-lg overflow-hidden">
           <img src="tops.jpg" alt="" class="w-full h-48 object-cover" />
-          <p class="absolute top-2 left-2 bg-white px-2 py-1 text-sm font-bold">
+          <p
+            class="absolute top-2 left-2 bg-white px-4 py-2 text-sm font-bold rounded"
+          >
             JEWELRY
           </p>
         </div>
+
         <div class="relative bg-white rounded-lg overflow-hidden">
           <img src="Clothing.jpg" alt="" class="w-full h-48 object-cover" />
-          <p class="absolute top-2 left-2 bg-white px-2 py-1 text-sm font-bold">
+          <p
+            class="absolute top-2 left-2 bg-white px-4 py-2 text-sm font-bold rounded"
+          >
             CLOTHING
           </p>
         </div>
+
         <div class="relative bg-white rounded-lg overflow-hidden">
           <img src="Clothing2.avif" alt="" class="w-full h-48 object-cover" />
+          <p
+            class="absolute top-2 left-2 bg-white px-4 py-2 text-sm font-bold rounded"
+          >
+            CLOTHING
+          </p>
         </div>
       </div>
     </div>
 
-    <section class="max-w-6xl mx-auto py-10 px-4">
-      <h2 class="text-3xl font-bold text-center mb-6">OUR HAPPY CUSTOMERS</h2>
+    <section class="max-w-6xl mx-auto py-8 lg:py-10 px-4 lg:px-6">
+      <h2 class="text-2xl lg:text-3xl font-bold text-center mb-6">
+        OUR HAPPY CUSTOMERS
+      </h2>
 
-      <div class="swiper mySwiper relative pb-12">
+      <div class="block swiper mySwiper relative pb-12">
         <div class="swiper-wrapper" id="reviews-container"></div>
 
         <div
-          class="swiper-button-next shadow-md w-0 h-10 flex items-center justify-center right-4"
+          class="swiper-button-next shadow-md w-10 h-10 flex items-center justify-center right-4"
         ></div>
         <div
-          class="swiper-button-prev mr-12 w-0 h-0 flex justify-center left-4"
+          class="swiper-button-prev w-10 h-10 flex items-center justify-center left-4"
         ></div>
 
         <div class="swiper-pagination !bottom-4"></div>
@@ -171,87 +243,106 @@
     </section>
 
     <div
-      class="bg-black text-white text-center p-6 md:p-10 mx-4 md:mx-16 lg:mx-32 rounded-xl"
+      class="bg-black text-white text-center p-6 mx-4 md:mx-16 lg:mx-32 rounded-xl"
     >
-      <h2 class="text-2xl md:text-3xl font-bold">
-        STAY UPTO DATE ABOUT<br />OUR LATEST OFFERS
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">
+        STAY UP TO DATE ABOUT<br />OUR LATEST OFFERS
       </h2>
 
-      <div class="mt-4 flex flex-col items-end space-y-3">
+      <div class="mt-6 flex flex-col items-center space-y-3">
         <input
           type="email"
           placeholder="Enter your email address"
-          class="p-3 w-80 rounded-md text-black"
+          class="p-3 w-full max-w-xs rounded-md text-black focus:outline-none focus:ring-2 focus:ring-white"
         />
-        <button class="bg-white text-black px-6 py-3 rounded-md font-bold w-80">
+        <button
+          class="bg-white text-black px-6 py-3 rounded-md font-bold w-full max-w-xs hover:bg-gray-200 transition"
+        >
           Subscribe to Newsletter
         </button>
       </div>
     </div>
 
-    <footer class="bg-gray-100 text-black p-10">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-10">
-        <div class="col-span-1 md:col-span-2">
-          <h2 class="text-2xl font-bold">SHOP.CO</h2>
-          <p class="text-sm mt-2">
-            We have clothes that suit your style and which you're proud to wear.
-            From women to men.
-          </p>
-          <div class="flex space-x-4 mt-4">
-            <a href="" class="text-black"><i class="fab fa-facebook"></i></a>
-            <a href="" class="text-black"><i class="fab fa-twitter"></i></a>
-            <a href="" class="text-black"><i class="fab fa-instagram"></i></a>
+    <footer class="bg-gray-100 text-black p-6 md:p-10">
+      <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10">
+          <div class="col-span-2">
+            <h2 class="text-2xl font-bold">SHOP.CO</h2>
+            <p class="text-sm mt-2 text-gray-600">
+              We have clothes that suits your style and which you're proud to
+              wear. From women to men.
+            </p>
+            <div class="flex space-x-4 mt-4">
+              <a href="" class="text-black hover:text-gray-600"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="" class="text-black hover:text-gray-600"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="" class="text-black hover:text-gray-600"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-sm md:text-base">COMPANY</h3>
+            <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
+              <li><a href="" class="hover:text-black">About</a></li>
+              <li><a href="" class="hover:text-black">Features</a></li>
+              <li><a href="" class="hover:text-black">Works</a></li>
+              <li><a href="" class="hover:text-black">Career</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-bold text-sm md:text-base">HELP</h3>
+            <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
+              <li><a href="" class="hover:text-black">Customer Support</a></li>
+              <li><a href="" class="hover:text-black">Delivery Details</a></li>
+              <li>
+                <a href="" class="hover:text-black">Terms & Conditions</a>
+              </li>
+              <li><a href="" class="hover:text-black">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="mt-4 md:mt-0">
+            <h3 class="font-bold text-sm md:text-base">FAQ</h3>
+            <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
+              <li><a href="" class="hover:text-black">Account</a></li>
+              <li>
+                <a href="" class="hover:text-black">Manage Deliveries</a>
+              </li>
+              <li><a href="" class="hover:text-black">Orders</a></li>
+              <li><a href="" class="hover:text-black">Payments</a></li>
+            </ul>
+          </div>
+
+          <div class="mt-4 md:mt-0">
+            <h3 class="font-bold text-sm md:text-base">RESOURCES</h3>
+            <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
+              <li><a href="" class="hover:text-black">Free eBooks</a></li>
+              <li>
+                <a href="" class="hover:text-black">Development Tutorial</a>
+              </li>
+              <li><a href="" class="hover:text-black">How to - Blog</a></li>
+              <li><a href="" class="hover:text-black">YouTube Playlist</a></li>
+            </ul>
           </div>
         </div>
 
-        <div>
-          <h3 class="font-bold">COMPANY</h3>
-          <ul class="text-sm mt-4 space-y-2">
-            <li><a href="">About</a></li>
-            <li><a href="">Features</a></li>
-            <li><a href="">Works</a></li>
-            <li><a href="">Career</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold">HELP</h3>
-          <ul class="text-sm mt-4 space-y-2">
-            <li><a href="">Customer Support</a></li>
-            <li><a href="">Delivery Details</a></li>
-            <li><a href="">Terms & Conditions</a></li>
-            <li><a href="">Privacy Policy</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold">FAQ</h3>
-          <ul class="text-sm mt-4 space-y-2">
-            <li><a href="">Account</a></li>
-            <li><a href="">Manage Deliveries</a></li>
-            <li><a href="">Orders</a></li>
-            <li><a href="">Payments</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="font-bold">RESOURCES</h3>
-          <ul class="text-sm mt-4 space-y-2">
-            <li><a href="">Free eBooks</a></li>
-            <li><a href="">Development Tutorial</a></li>
-            <li><a href="">How to - Blog</a></li>
-            <li><a href="">YouTube Playlist</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div
-        class="max-w-6xl mx-auto mt-8 pt-4 flex justify-between text-sm text-gray-500"
-      >
-        <p>Shop.co © 2000-2023, All Rights Reserved</p>
-        <div class="flex space-x-2">
-          <i class="fa-brands fa-cc-visa" class="h-6 text-4xl"></i>
-          <i class="fa-brands fa-cc-paypal" class="h-6"></i>
-          <i class="fa-brands fa-cc-mastercard" class="h-6"></i>
-          <i class="fa-brands fa-cc-apple-pay" class="h-6"></i>
-          <i class="fa-brands fa-google-pay" class="h-6"></i>
+        <div
+          class="mt-8 pt-4 border-t border-gray-300 flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm text-gray-500"
+        >
+          <p>Shop.co © 2000-2023, All Rights Reserved</p>
+          <div class="flex space-x-2">
+            <i class="fa-brands fa-cc-visa text-lg"></i>
+            <i class="fa-brands fa-cc-paypal text-lg"></i>
+            <i class="fa-brands fa-cc-mastercard text-lg"></i>
+            <i class="fa-brands fa-cc-apple-pay text-lg"></i>
+            <i class="fa-brands fa-google-pay text-lg"></i>
+          </div>
         </div>
       </div>
     </footer>

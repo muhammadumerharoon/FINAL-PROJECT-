@@ -6,30 +6,62 @@
     <title>Thank You</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body
-    class="flex flex-col items-center justify-center min-h-screen bg-gray-100"
-  >
-    <div class="bg-white p-8 rounded-lg shadow-lg max-w-3xl w-full">
-      <h1 class="text-2xl font-bold text-green-600 text-center">
+  <section class="w-full bg-black text-white text-center py-2 text-sm">
+    SIGN UP AND GET 20% OFF YOUR FIRST ORDER. SIGN UP NOW
+  </section>
+
+  <nav class="px-4 lg:px-16 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-4 lg:gap-10">
+      <a href="Homepage.html"
+        ><img src="Nav logo.jpg" alt="Logo" class="h-8 lg:h-auto"
+      /></a>
+      <ul class="hidden items-center gap-6 lg:gap-10 md:flex">
+        <li>
+          <a
+            href="http://127.0.0.1:5500/E-commerce/Categorypage.html?category=clothing"
+            >Shop</a
+          >
+        </li>
+        <li>On Sale</li>
+        <li>New Arrivals</li>
+        <li>Brands</li>
+      </ul>
+    </div>
+
+    <div class="flex items-center gap-4 lg:gap-6">
+      <i
+        class="fa-solid fa-cart-shopping text-lg lg:text-xl cursor-pointer"
+      ></i>
+      <i class="fa-solid fa-user text-lg lg:text-xl cursor-pointer"></i>
+    </div>
+  </nav>
+  <body class="flex flex-col items-center justify-center">
+    <div
+      class="bg-white p-4 sm:p-6 md:p-8 rounded-lg shadow-lg max-w-3xl w-full mx-4"
+    >
+      <h1 class="text-xl sm:text-2xl font-bold text-green-600 text-center">
         Thank You for Your Purchase!
       </h1>
-      <p class="text-center text-gray-600 mt-2">
+      <p class="text-center text-gray-600 mt-2 text-sm sm:text-base">
         Your order has been placed successfully.
       </p>
 
-      <div class="mt-6">
-        <h2 class="text-xl font-semibold">Your Details</h2>
-        <p id="userInfo" class="text-gray-700 mt-2"></p>
+      <div class="mt-4 sm:mt-6">
+        <h2 class="text-lg sm:text-xl font-semibold">Your Details</h2>
+        <p id="userInfo" class="text-gray-700 mt-2 text-sm sm:text-base"></p>
       </div>
 
-      <div class="mt-6">
-        <h2 class="text-xl font-semibold">Order Summary</h2>
-        <div id="orderSummary" class="text-gray-700 mt-2"></div>
+      <div class="mt-4 sm:mt-6">
+        <h2 class="text-lg sm:text-xl font-semibold">Order Summary</h2>
+        <div
+          id="orderSummary"
+          class="text-gray-700 mt-2 text-sm sm:text-base"
+        ></div>
       </div>
 
       <button
         onclick="goBack()"
-        class="mt-6 bg-black text-white px-6 py-2 rounded-lg"
+        class="mt-4 sm:mt-6 bg-black text-white px-4 py-2 sm:px-6 sm:py-2 rounded-lg w-full sm:w-auto text-sm sm:text-base"
       >
         Continue Shopping
       </button>

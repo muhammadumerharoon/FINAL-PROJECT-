@@ -11,10 +11,9 @@ async function fetchProducts() {
   
           
           let filteredProducts = [];
-          if (category === 'clothing') {
+          if (category === 'https://fakestoreapi.com/products') {
               
-              filteredProducts = products.filter(p => p.category === "men's clothing" || p.category === "women's clothing");
-          } else if (category === 'jewelery') {
+          } else if (category === 'All Products') {
               filteredProducts = products.filter(p => p.category === category);
           } else {
              
@@ -23,7 +22,7 @@ async function fetchProducts() {
   
           filteredProducts.slice(0, 10).forEach(product => {
               let productCard = `
-                  <div class="bg-white p-4 shadow-md rounded-lg">
+                  <div class="bg-white p-4 rounded-lg">
                       <img src="${product.image}" alt="${product.title}" class="w-full h-48 object-contain mb-4">
                       <h2 class="text-lg font-semibold">${product.title}</h2>
                       <p class="text-gray-500 text-sm">${product.category}</p>
