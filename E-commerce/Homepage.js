@@ -1,3 +1,29 @@
+document.addEventListener('DOMContentLoaded', function() {
+  var Hamburgericon = document.getElementById('Hamburgericon');
+  var Closemenu = document.getElementById('Closemenu');
+  var Sidebar = document.getElementById('Sidebar');
+  var sidebarOverlay = document.getElementById('sidebarOverlay');
+  
+  Hamburgericon.addEventListener('click', function() {
+    Sidebar.classList.remove('-translate-x-full');
+    sidebarOverlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  });
+  
+  function closeSidebar() {
+    Sidebar.classList.add('-translate-x-full');
+    sidebarOverlay.classList.add('hidden');
+  }
+  
+  Closemenu.addEventListener('click', closeSidebar);
+  sidebarOverlay.addEventListener('click', closeSidebar);
+  
+  const sidebarLinks = Sidebar.querySelectorAll('li');
+  sidebarLinks.forEach(link => {
+    link.addEventListener('click', closeSidebar);
+  });
+});
+
 const apiURL = "https://fakestoreapi.com/products";
 let allProducts = [];
 
@@ -11,9 +37,6 @@ async function fetchProducts() {
     }
 }
 
-
-
-
 function showDefaultProducts() {
     const clothing = allProducts.filter(p => p.category.includes("clothing")).slice(0, 4);
     const jewelry = allProducts.filter(p => p.category.includes("jewelery")).slice(0, 4);
@@ -21,8 +44,6 @@ function showDefaultProducts() {
     displayProducts(clothing, "products-container");
     displayProducts(jewelry, "top-selling-container");
 }
-
-
 
 
 function displayProducts(products, containerId) {
@@ -42,9 +63,6 @@ function displayProducts(products, containerId) {
       }).join("");
   }
   
-
-
-
 
 function getStarRating(rating) {
     const fullStars = Math.floor(rating);
@@ -96,7 +114,6 @@ document.addEventListener("DOMContentLoaded", async function() {
           console.error("Error fetching reviews:", error);
       }
   });
-
 
   document.addEventListener("DOMContentLoaded", async function () {
     const API_URL = "https://jsonplaceholder.typicode.com/comments";

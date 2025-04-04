@@ -10,6 +10,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
   </head>
+  <style>
+    #mobile-sidebar {
+      transition: transform 0.3s ease-in-out;
+    }
+    #mobile-sidebar.open {
+      transform: translateX(0);
+    }
+    #sidebar-overlay {
+      transition: opacity 0.3s ease-in-out;
+    }
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+      font-size: 16px;
+    }
+  </style>
   <body>
     <section class="w-full bg-black text-white text-center py-2 text-sm">
       SIGN UP AND GET 20% OFF YOUR FIRST ORDER. SIGN UP NOW
@@ -24,12 +39,11 @@
           <li>
             <a
               href="http://127.0.0.1:5500/E-commerce/Categorypage.html?category=clothing"
-              >Shop</a
+              >SHOP</a
             >
           </li>
-          <li>On Sale</li>
-          <li>New Arrivals</li>
-          <li>Brands</li>
+          <li>CLOTHING</li>
+          <li>JEWELRY</li>
         </ul>
       </div>
 
@@ -122,7 +136,7 @@
 
           <button
             id="add-to-cart"
-            class="mt-4 bg-black text-white px-4 py-2 rounded-full"
+            class="mt-6 px-6 py-3 bg-black text-white rounded-full border-2 border-black hover:bg-white hover:text-black transition-all duration-300"
           >
             Add to Cart
           </button>
@@ -138,7 +152,9 @@
         </h2>
         <div class="flex items-center space-x-4">
           <button class="bg-gray-200 px-4 py-2 rounded-lg">Latest ▼</button>
-          <button class="bg-black text-white px-4 py-2 rounded-lg">
+          <button
+            class="bg-black text-white border-2 border-black px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all duration-300"
+          >
             Write a Review
           </button>
         </div>

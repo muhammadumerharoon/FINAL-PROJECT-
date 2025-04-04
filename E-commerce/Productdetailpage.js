@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", async function () {
   
           filteredProducts.slice(0, 4).forEach(product => {
               const productElement = document.createElement("div");
-              productElement.classList.add("bg-white", "p-4", "rounded-lg", "shadow-lg");
+              productElement.classList.add("bg-white", "p-4", "rounded-lg", "shadow-md");
               productElement.innerHTML = `
                   <img src="${product.image}" class="w-full h-48 object-contain" alt="${product.title}" />
                   <h3 class="text-lg font-bold mt-2">${product.title}</h3>

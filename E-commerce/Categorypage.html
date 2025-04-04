@@ -24,18 +24,11 @@
           ><img src="Nav logo.jpg" alt="Logo" class="h-8 lg:h-auto"
         /></a>
         <ul class="hidden items-center gap-6 lg:gap-10 md:flex">
-          <li>
-            <a
-              href="http://127.0.0.1:5500/E-commerce/Categorypage.html?category=clothing"
-              >Shop</a
-            >
-          </li>
-          <li>On Sale</li>
-          <li>New Arrivals</li>
-          <li>Brands</li>
+          <li><a href="?category=clothing">SHOP</a></li>
+          <li>CLOTHING</li>
+          <li>JEWELRY</li>
         </ul>
       </div>
-
       <div class="flex items-center gap-4 lg:gap-6">
         <i
           class="fa-solid fa-cart-shopping text-lg lg:text-xl cursor-pointer"
@@ -43,15 +36,18 @@
         <i class="fa-solid fa-user text-lg lg:text-xl cursor-pointer"></i>
       </div>
     </nav>
+
     <div class="max-w-6xl mx-auto">
       <div
         id="products-container"
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-gray-100"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 bg-gray-100 p-6"
       ></div>
+
+      <div id="pagination" class="flex justify-center mt-6 space-x-2"></div>
     </div>
 
     <div
-      class="bg-black text-white text-center p-6 md:p-10 mt-16 mx-4 md:mx-16 lg:mx-32 rounded-xl"
+      class="bg-black text-white text-center p-6 mx-4 md:mx-16 lg:mx-32 rounded-xl mt-6"
     >
       <h2 class="text-2xl md:text-3xl font-bold mb-4">
         STAY UP TO DATE ABOUT<br />OUR LATEST OFFERS
