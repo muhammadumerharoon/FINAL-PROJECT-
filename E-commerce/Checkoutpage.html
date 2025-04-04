@@ -21,9 +21,7 @@
           ><img src="Nav logo.jpg" alt="Logo" class="h-8 lg:h-auto"
         /></a>
         <ul class="hidden items-center gap-6 lg:gap-10 md:flex">
-          <li>
-            <a href="Categorypage.html">SHOP</a>
-          </li>
+          <li><a href="Categorypage.html">SHOP</a></li>
           <li>JEWELRY</li>
           <li>CLOTHING</li>
         </ul>
@@ -46,8 +44,11 @@
           type="email"
           id="email"
           placeholder="Email or mobile phone number"
-          class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
+          class="w-full p-2 border rounded mb-1 text-sm lg:text-base"
         />
+        <div id="email-error" class="text-red-500 text-sm mb-2 hidden">
+          Please enter a valid email or phone number
+        </div>
         <label
           class="flex items-center gap-2 mb-3 lg:mb-4 text-sm lg:text-base"
         >
@@ -61,39 +62,54 @@
         <input
           type="text"
           id="firstName"
-          placeholder="First name (optional)"
-          class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
+          placeholder="First name"
+          class="w-full p-2 border rounded mb-1 text-sm lg:text-base"
         />
+        <div id="firstName-error" class="text-red-500 text-sm mb-2 hidden">
+          First name is required
+        </div>
+
         <input
           type="text"
           id="lastName"
           placeholder="Last name"
-          class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
+          class="w-full p-2 border rounded mb-1 text-sm lg:text-base"
         />
+        <div id="lastName-error" class="text-red-500 text-sm mb-2 hidden">
+          Last name is required
+        </div>
+
         <input
           type="text"
           id="address"
           placeholder="Address"
-          class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
+          class="w-full p-2 border rounded mb-1 text-sm lg:text-base"
         />
+        <div id="address-error" class="text-red-500 text-sm mb-2 hidden">
+          Address is required
+        </div>
+
         <input
           type="text"
           id="apartment"
           placeholder="Apartment, suite, etc. (optional)"
           class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
         />
+
         <input
           type="text"
           id="city"
           placeholder="City"
           class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
         />
+
         <input
           type="text"
           id="postalCode"
           placeholder="Postal code (optional)"
           class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
         />
+
         <label
           class="flex items-center gap-2 mb-3 lg:mb-4 text-sm lg:text-base"
         >
@@ -117,24 +133,28 @@
           placeholder="Card number"
           class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
         />
+
         <input
           type="text"
           id="expiryDate"
           placeholder="Expiration date (MM/YY)"
           class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
         />
+
         <input
           type="text"
           id="securityCode"
           placeholder="Security code"
           class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
         />
+
         <input
           type="text"
           id="cardHolderName"
           placeholder="Name on card"
           class="w-full p-2 border rounded mb-3 text-sm lg:text-base"
         />
+
         <label
           class="flex items-center gap-2 mb-3 lg:mb-4 text-sm lg:text-base"
         >
@@ -169,6 +189,7 @@
         </p>
       </div>
     </div>
+
+    <script src="Checkoutpage.js"></script>
   </body>
-  <script src="Checkoutpage.js"></script>
 </html>
