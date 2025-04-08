@@ -17,19 +17,20 @@ function renderProducts() {
   let container = document.getElementById('products-container');
   container.innerHTML = '';
 
-  
   let startIdx = (currentPage - 1) * productsPerPage;
   let endIdx = startIdx + productsPerPage;
   let paginatedProducts = products.slice(startIdx, endIdx);
 
   paginatedProducts.forEach(product => {
     let productCard = `
-      <div class="bg-white p-4 rounded-lg">
-        <img src="${product.image}" alt="${product.title}" class="w-full h-48 object-contain mb-4">
-        <h2 class="text-lg font-semibold">${product.title}</h2>
-        <p class="text-gray-500 text-sm">${product.category}</p>
-        <p class="text-xl font-bold mt-2">$${product.price}</p>
-      </div>`;
+      <a href="Productdetailpage.html?id=${product.id}">
+        <div class="bg-white p-4 rounded-lg hover:shadow-lg transition-shadow">
+          <img src="${product.image}" alt="${product.title}" class="w-full h-48 object-contain mb-4">
+          <h2 class="text-lg font-semibold">${product.title}</h2>
+          <p class="text-gray-500 text-sm">${product.category}</p>
+          <p class="text-xl font-bold mt-2">$${product.price}</p>
+        </div>
+      </a>`;
     container.innerHTML += productCard;
   });
 }
@@ -38,10 +39,8 @@ function updatePagination() {
   let paginationContainer = document.getElementById('pagination');
   paginationContainer.innerHTML = '';
 
- 
   let totalPages = Math.ceil(products.length / productsPerPage);
 
-  
   let prevButton = document.createElement('button');
   prevButton.textContent = '←';
   prevButton.className = `px-4 py-2 rounded-md ${currentPage === 1 ? 'bg-gray-300 cursor-not-allowed' : 'bg-gray-300 hover:bg-gray-400'}`;
@@ -53,7 +52,6 @@ function updatePagination() {
     }
   };
   paginationContainer.appendChild(prevButton);
-
 
   for (let i = 1; i <= totalPages; i++) {
     let pageButton = document.createElement('button');
@@ -67,7 +65,6 @@ function updatePagination() {
     paginationContainer.appendChild(pageButton);
   }
 
-  
   let nextButton = document.createElement('button');
   nextButton.textContent = '→';
   nextButton.className = `px-4 py-2 rounded-md ${currentPage === totalPages ? 'bg-gray-300 cursor-not-allowed' : 'bg-gray-300 hover:bg-gray-400'}`;
