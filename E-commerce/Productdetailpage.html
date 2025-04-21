@@ -52,7 +52,7 @@
       </div>
     </nav>
     <div class="container mx-auto p-6">
-      <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col md:flex-row">
+      <div class="bg-white p-6 rounded-lg flex flex-col md:flex-row">
         <div class="w-full md:w-1/2 flex flex-col items-center">
           <img
             id="product-image"
@@ -69,12 +69,22 @@
             <span class="text-yellow-500 text-lg">★★★★★</span>
             <span class="ml-2 text-gray-600">4.5/5</span>
           </div>
-          <p id="original-price" class="text-gray-400 line-through mt-2">
-            $22.39
-          </p>
-          <p id="discounted-price" class="text-2xl font-bold text-red-600">
-            $15.99
-          </p>
+
+          <div class="flex">
+            <p
+              id="discounted-price"
+              class="text-2xl font-bold text-black text-3xl"
+            >
+              $15.99
+            </p>
+            <p
+              id="original-price"
+              class="text-gray-500 line-through text-3xl ml-4"
+            >
+              $22.39
+            </p>
+          </div>
+
           <p id="product-description" class="text-gray-600 mt-4">
             The color could be slightly different between on the screen and in
             practice. / Please note that body builds vary by person, therefore,
@@ -83,62 +93,132 @@
           </p>
 
           <div class="mt-4">
-            <h2 class="text-lg font-semibold">Choose Size</h2>
+            <h2 class="text-lg">Choose Size</h2>
             <div class="flex space-x-2 mt-2">
               <button
-                class="px-4 py-2 border rounded-lg focus:bg-black focus:text-white"
+                class="px-4 py-2 border rounded-full bg-gray-200 text-gray-600"
               >
                 Small
               </button>
               <button
-                class="px-4 py-2 border rounded-lg focus:bg-black focus:text-white"
+                class="px-4 py-2 border rounded-full bg-gray-200 text-gray-600"
               >
                 Medium
               </button>
-              <button class="px-4 py-2 border rounded-lg bg-black text-white">
+              <button class="px-4 py-2 border rounded-full bg-black text-white">
                 Large
               </button>
               <button
-                class="px-4 py-2 border rounded-lg focus:bg-black focus:text-white"
+                class="px-4 py-2 border rounded-full bg-gray-200 text-gray-600"
               >
                 X-Large
               </button>
             </div>
           </div>
-
-          <div id="quantity-container" class="mt-4">
-            <label class="block font-bold">Quantity:</label>
-            <div class="flex items-center space-x-2">
-              <button
-                id="decrease-quantity"
-                class="px-3 py-1 bg-gray-300 rounded"
-              >
-                -
-              </button>
-              <input
-                type="number"
-                id="quantity"
-                class="border p-2 rounded w-16 text-center"
-                min="1"
-                value="1"
-              />
-              <button
-                id="increase-quantity"
-                class="px-3 py-1 bg-gray-300 rounded"
-              >
-                +
-              </button>
+          <div class="flex items-center space-x-4 mt-4">
+            <div id="quantity-container">
+              <div class="flex items-center space-x-2">
+                <button
+                  id="decrease-quantity"
+                  class="px-3 py-1 bg-gray-300 rounded"
+                >
+                  -
+                </button>
+                <input
+                  type="number"
+                  id="quantity"
+                  class="border p-2 rounded w-16 text-center"
+                  min="1"
+                  value="1"
+                />
+                <button
+                  id="increase-quantity"
+                  class="px-3 py-1 bg-gray-300 rounded"
+                >
+                  +
+                </button>
+              </div>
             </div>
+
+            <button
+              id="add-to-cart"
+              class="px-28 py-1 bg-black text-white rounded-full border-2 border-black hover:bg-white hover:text-black transition-all duration-300"
+            >
+              Add to Cart
+            </button>
           </div>
 
-          <button
-            id="add-to-cart"
-            class="mt-6 px-6 py-3 bg-black text-white rounded-full border-2 border-black hover:bg-white hover:text-black transition-all duration-300"
-          >
-            Add to Cart
-          </button>
           <p id="product-description" class="mt-4"></p>
         </div>
+      </div>
+    </div>
+
+    <div class="flex border-b border-gray-200 mb-6 gap-60 justify-center">
+      <button
+        id="productTab"
+        class="tab-button py-2 px-4 font-medium text-gray-500 hover:text-black focus:outline-none"
+      >
+        Product Details
+      </button>
+      <button
+        id="reviewsTab"
+        class="tab-button py-2 px-4 font-medium border-b-2 border-black hover:text-black focus:outline-none"
+      >
+        Rating & Reviews
+      </button>
+      <button
+        id="faqTab"
+        class="tab-button py-2 px-4 font-medium text-gray-500 hover:text-black focus:outline-none"
+      >
+        FAQs
+      </button>
+    </div>
+
+    <div id="productContent" class="hidden ml-32 mt-8">
+      <h2 class="text-xl font-bold mb-4">Premium Wireless Headphones</h2>
+      <p class="text-gray-700">
+        Quality Clothing, Tech products and jewlry which you might have not
+        experienced before we have a huge market and thousands of satisfied
+        customers all over the world, who trust and and buy our products, we
+        also have return policy which means you can return the product within 20
+        days if you have any issue or you did not receive the product as it was
+        shown in the image, the pricing of the product that we offer is also ver
+        reasonable and any one can purchase our good quality and very reasonable
+        products.
+      </p>
+    </div>
+
+    <div id="reviewsContent"></div>
+
+    <div id="faqContent" class="hidden mt-8">
+      <div class="mb-4 ml-32">
+        <h3 class="font-bold">What is the warranty period for this product?</h3>
+        <p class="text-gray-700 mt-1">
+          All our products come with a 1-year manufacturer's warranty against
+          defects.
+        </p>
+      </div>
+
+      <div class="mb-4 ml-32">
+        <h3 class="font-bold">How can I return this product?</h3>
+        <p class="text-gray-700 mt-1">
+          You can initiate a return within 30 days of purchase through your
+          account dashboard.
+        </p>
+      </div>
+      <div class="mb-4 ml-32">
+        <h3 class="font-bold">Is international shipping available?</h3>
+        <p class="text-gray-700 mt-1">
+          Yes, we ship to most countries worldwide with additional shipping
+          charges.
+        </p>
+      </div>
+      <div class="mb-4 ml-32">
+        <h3 class="font-bold">How do I contact customer support?</h3>
+        <p class="text-gray-700 mt-1">
+          Our support team is available 24/7 via live chat or email at
+          Mumerharoon@gmail.com
+        </p>
       </div>
     </div>
 
@@ -172,26 +252,37 @@
       id="products"
       class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 px-4 md:mx-8 mt-8 md:mt-12"
     >
-      <div class="bg-white p-3 md:p-4 rounded-lg shadow-lg"></div>
-      <div class="bg-white p-3 md:p-4 rounded-lg shadow-lg"></div>
-      <div class="bg-white p-3 md:p-4 rounded-lg shadow-lg"></div>
+      <div class="bg-gray-600 p-3 md:p-4 rounded-lg"></div>
+      <div class="bg-gray-200 p-3 md:p-4 rounded-lg"></div>
+      <div class="bg-gray-200 p-3 md:p-4 rounded-lg"></div>
     </div>
 
     <div
-      class="bg-black text-white text-center p-6 mx-4 md:mx-16 lg:mx-32 rounded-xl"
+      class="bg-black mt-8 rounded-[20px] px-4 md:px-10 py-6 md:py-10 flex flex-col md:flex-row items-center justify-between gap-6 w-full max-w-7xl mx-auto"
     >
-      <h2 class="text-2xl md:text-3xl font-bold mb-4">
-        STAY UP TO DATE ABOUT<br />OUR LATEST OFFERS
+      <h2
+        class="text-white text-2xl md:text-3xl font-extrabold leading-tight text-center md:text-left"
+      >
+        STAY UPTO DATE ABOUT<br />
+        OUR LATEST OFFERS
       </h2>
 
-      <div class="mt-6 flex flex-col items-center space-y-3">
-        <input
-          type="email"
-          placeholder="Enter your email address"
-          class="p-3 w-full max-w-xs rounded-md text-black focus:outline-none focus:ring-2 focus:ring-white"
-        />
+      <div class="flex flex-col gap-3 w-full md:w-80">
+        <div class="relative w-full">
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            class="w-full py-3 pl-10 pr-4 rounded-full outline-none text-sm text-black placeholder-gray-500"
+          />
+          <span
+            class="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-500 text-sm"
+          >
+            📧
+          </span>
+        </div>
+
         <button
-          class="bg-white text-black px-6 py-3 rounded-md font-bold w-full max-w-xs hover:bg-gray-200 transition"
+          class="bg-white text-black font-medium text-sm py-3 px-6 rounded-full hover:bg-gray-200 transition w-full"
         >
           Subscribe to Newsletter
         </button>
@@ -200,10 +291,10 @@
 
     <footer class="bg-gray-100 text-black p-6 md:p-10">
       <div class="max-w-6xl mx-auto">
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10">
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-6 md:gap-10">
           <div class="col-span-2">
-            <h2 class="text-2xl font-bold">SHOP.CO</h2>
-            <p class="text-sm mt-2 text-gray-600">
+            <img src="CO.png" alt="" />
+            <p class="text-sm mt-2 text-gray-600 w-64 mt-4">
               We have clothes that suits your style and which you're proud to
               wear. From women to men.
             </p>
@@ -221,7 +312,7 @@
           </div>
 
           <div>
-            <h3 class="font-bold text-sm md:text-base">COMPANY</h3>
+            <h3 class="text-sm md:text-base">COMPANY</h3>
             <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
               <li><a href="" class="hover:text-black">About</a></li>
               <li><a href="" class="hover:text-black">Features</a></li>
@@ -231,7 +322,7 @@
           </div>
 
           <div>
-            <h3 class="font-bold text-sm md:text-base">HELP</h3>
+            <h3 class="text-sm md:text-base">HELP</h3>
             <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
               <li><a href="" class="hover:text-black">Customer Support</a></li>
               <li><a href="" class="hover:text-black">Delivery Details</a></li>
@@ -243,19 +334,17 @@
           </div>
 
           <div class="mt-4 md:mt-0">
-            <h3 class="font-bold text-sm md:text-base">FAQ</h3>
+            <h3 class="text-sm md:text-base">FAQ</h3>
             <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
               <li><a href="" class="hover:text-black">Account</a></li>
-              <li>
-                <a href="" class="hover:text-black">Manage Deliveries</a>
-              </li>
+              <li><a href="" class="hover:text-black">Manage Deliveries</a></li>
               <li><a href="" class="hover:text-black">Orders</a></li>
               <li><a href="" class="hover:text-black">Payments</a></li>
             </ul>
           </div>
 
           <div class="mt-4 md:mt-0">
-            <h3 class="font-bold text-sm md:text-base">RESOURCES</h3>
+            <h3 class="text-sm md:text-base">RESOURCES</h3>
             <ul class="text-xs md:text-sm mt-3 space-y-2 text-gray-600">
               <li><a href="" class="hover:text-black">Free eBooks</a></li>
               <li>
@@ -281,7 +370,7 @@
         </div>
       </div>
     </footer>
-
-    <script src="Productdetailpage.js"></script>
   </body>
+  <script src="Productdetailpage.js"></script>
+  <script src="Loginpage.js"></script>
 </html>

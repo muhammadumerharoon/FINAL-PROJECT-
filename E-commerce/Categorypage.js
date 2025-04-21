@@ -1,11 +1,15 @@
 let currentPage = 1;
-const productsPerPage = 6; 
+const productsPerPage = 6;
 let products = [];
+
 
 async function fetchProducts() {
   try {
     let response = await fetch('https://fakestoreapi.com/products');
     products = await response.json();
+
+    console.log(products);
+
     renderProducts();
     updatePagination();
   } catch (error) {
@@ -79,3 +83,8 @@ function updatePagination() {
 }
 
 fetchProducts();
+
+
+
+
+

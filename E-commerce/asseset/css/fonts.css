@@ -1,0 +1,16 @@
+@font-face {
+      font-family: "Intergral CF";
+      src: url(../fonts/Intergal/Fontspring-DEMO-integralcf-extrabold.otf);
+}
+
+h1,h2,h4,h5,h6{
+      font-family: "Intergral CF";
+}
+
+p {
+      font-family: 'Segoe UI';
+}
+
+.swiper-pagination{
+       display: none
+}

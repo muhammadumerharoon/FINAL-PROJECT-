@@ -1,8 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     loadCartForCheckout();
-    
-    document.getElementById("payNowButton").addEventListener("click", function(e) 
-    {
+
+    document.getElementById("payNowButton").addEventListener("click", function (e) {
         e.preventDefault();
         if (validateForm()) {
             proceedToPayment();
@@ -12,14 +11,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function loadCartForCheckout() {
+
     let cart = JSON.parse(localStorage.getItem("cart"));
+
     const checkoutContainer = document.getElementById("checkout-items");
+
     checkoutContainer.innerHTML = "";
+
     let subtotal = 0;
 
     cart.forEach(item => {
-        item.quantity = item.quantity;
-        subtotal += item.price * item.quantity;
+
+
+
+        subtotal = subtotal + item.price * item.quantity
 
         let itemElement = document.createElement("div");
         itemElement.classList.add("flex", "items-center", "justify-between", "p-4", "border-b");
@@ -46,9 +51,6 @@ function validateForm() {
     let isValid = true;
 
 
-
-    
-    
     const email = document.getElementById("email").value;
     const emailError = document.getElementById("email-error");
     if (!email || (!validateEmail(email))) {
@@ -57,12 +59,8 @@ function validateForm() {
     } else {
         emailError.classList.add("hidden");
     }
-    
 
 
-
-
-    
     const firstName = document.getElementById("firstName").value;
     const firstNameError = document.getElementById("firstName-error");
     if (!firstName) {
@@ -71,12 +69,8 @@ function validateForm() {
     } else {
         firstNameError.classList.add("hidden");
     }
-    
 
 
-
-
-   
     const lastName = document.getElementById("lastName").value;
     const lastNameError = document.getElementById("lastName-error");
     if (!lastName) {
@@ -85,12 +79,8 @@ function validateForm() {
     } else {
         lastNameError.classList.add("hidden");
     }
-    
 
 
-
-
-    
     const address = document.getElementById("address").value;
     const addressError = document.getElementById("address-error");
     if (!address) {
@@ -99,27 +89,23 @@ function validateForm() {
     } else {
         addressError.classList.add("hidden");
     }
-    
+
     return isValid;
 }
-
-
 
 
 function validateEmail(email) {
     const hasAt = email.includes("@");
     const hasDot = email.includes(".");
     const atBeforeDot = email.indexOf("@") < email.lastIndexOf(".");
-    
-    const atValidPosition = email.indexOf("@") > 0 && 
-    email.lastIndexOf("@") === email.indexOf("@"); 
-    
+
+    const atValidPosition = email.indexOf("@") > 0 &&
+        email.lastIndexOf("@") === email.indexOf("@");
+
     const noSpaces = !email.includes(" ");
-    
-   return hasAt && hasDot && atBeforeDot && atValidPosition && noSpaces;
+
+    return hasAt && hasDot && atBeforeDot && atValidPosition && noSpaces;
 }
-
-
 
 
 function proceedToPayment() {
@@ -140,3 +126,22 @@ function proceedToPayment() {
     localStorage.setItem("userInfo", JSON.stringify(userInfo));
     window.location.href = "Thankyoupage.html";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
